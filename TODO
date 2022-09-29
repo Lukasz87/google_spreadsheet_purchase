@@ -1,0 +1,7 @@
+TODO Tasks:
+
+1) Add to vendor panel integration by Google spreadsheet and when checkbox is mark, when user click on PO" Confirm Order"
+order will be send to Vendor sheet
+2) To connect with google use - https://docs.gspread.org/en/latest/
+3) When user change "vendor fields" in spreadsheet, send info to odoo
+4) Canceled/changes on order will be send to spreadsheet
