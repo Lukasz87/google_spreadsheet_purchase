@@ -29,7 +29,7 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/res_partner_views.xml',
-        'views/templates.xml',
+        'views/purchase_order_views.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
