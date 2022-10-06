@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="spreadsheet_panel_tree_view" model="ir.ui.view">
+            <field name="name">spreadsheet.panel.tree.view</field>
+            <field name="model">spreadsheet.panel</field>
+            <field name="arch" type="xml">
+                <tree string="Spreadsheet Panel">
+                    <field name="spreadsheet_credentials"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="spreadsheet_panel_action" model="ir.actions.act_window">
+            <field name="name">Vendor Spreadsheet Panel</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">spreadsheet.panel</field>
+            <field name="view_mode">tree</field>
+            <field name="context"></field>
+        </record>
+
+        <menuitem action="spreadsheet_panel_action" id="menu_spreadsheet_panel_action"
+                  parent="purchase.menu_purchase_config" sequence="11" name="Spreadsheet Panel"/>
+    </data>
+</odoo>

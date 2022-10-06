@@ -27,9 +27,10 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/res_partner_views.xml',
         'views/purchase_order_views.xml',
+        'views/spreadsheet_panel.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
