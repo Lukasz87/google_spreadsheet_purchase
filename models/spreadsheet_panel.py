@@ -5,6 +5,8 @@ class SpreadsheetPanel(models.Model):
     _name = 'spreadsheet.panel'
     _description = "Spreadsheet Panel"
 
-    spreadsheet_credentials = fields.Binary('Spreadsheet Credentials')  # TODO Temp -remove
+    vendor = fields.Many2one('res.partner', required=True)
+    spreadsheet_id = fields.Char('Spreadsheet ID')
+
 
 
