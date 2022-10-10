@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="spreadsheet_panel_settings" model="res.config.spreadsheet.panel">
+            <field name="spreadsheet_credentials">Spreadsheet Panel Json Value</field>
+        </record>
+    </data>
+</odoo>

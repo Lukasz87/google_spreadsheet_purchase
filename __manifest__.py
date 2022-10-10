@@ -32,6 +32,7 @@
         'views/spreadsheet_panel.xml',
         'views/res_config_settings_views.xml',
         'views/res_partner_views.xml',
+        'data/res_config_spreadsheet_panel.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
