@@ -11,12 +11,14 @@
                 <xpath expr="//div[@name='matrix_setting_container']" position="after">
                     <h2>Spreadsheet Panel</h2>
                         <div class="row mt16 o_settings_container" name="spreadsheet_panel_setting_container">
-                            <div class="o_setting_left_pane" style="margin-left: 4%;">
-                                <label for="spreadsheet_credentials"/>
+                            <div class="o_setting_left_pane">
+                                <field name="spreadsheet_panel"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="spreadsheet_panel" string="Spreadsheet Panel"/>
                                 <div class="text-muted">
-                                    Credentials for Purchase spreadsheet panel.
+                                    Active spreadsheet panel.
                                 </div>
-                                <field name="spreadsheet_credentials"/>
                             </div>
                         </div>
                 </xpath>

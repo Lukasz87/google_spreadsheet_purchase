@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_spreadsheet_panel,google_spreadsheet_purchase.spreadsheet.panel,model_spreadsheet_panel,base.group_user,1,1,1,1
+access_spreadsheet_panel_settings,google_spreadsheet_purchase.spreadsheet.panel.settings,model_res_config_spreadsheet_panel,base.group_user,1,1,1,1

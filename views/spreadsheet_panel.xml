@@ -7,8 +7,19 @@
             <field name="model">spreadsheet.panel</field>
             <field name="arch" type="xml">
                 <tree string="Spreadsheet Panel">
-                    <field name="spreadsheet_credentials"/>
+                    <field name="vendor"/>
+                    <field name="spreadsheet_id"/>
                 </tree>
+            </field>
+        </record>
+
+        <record id="spreadsheet_panel_settings_form_view" model="ir.ui.view">
+            <field name="name">spreadsheet.panel.form.view</field>
+            <field name="model">res.config.spreadsheet.panel</field>
+            <field name="arch" type="xml">
+                <form string="Spreadsheet Panel Settings">
+                    <field name="spreadsheet_credentials"/>
+                </form>
             </field>
         </record>
 
@@ -20,7 +31,17 @@
             <field name="context"></field>
         </record>
 
+        <record id="spreadsheet_panel_settings_action" model="ir.actions.act_window">
+            <field name="name">Vendor Spreadsheet Panel Settings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.spreadsheet.panel</field>
+            <field name="view_mode">form</field>
+            <field name="context"></field>
+        </record>
+
+        <menuitem action="spreadsheet_panel_settings_action" id="menu_spreadsheet_panel_settings_action"
+                  parent="purchase.menu_purchase_config" sequence="11" name="Spreadsheet Panel Settings"/>
         <menuitem action="spreadsheet_panel_action" id="menu_spreadsheet_panel_action"
-                  parent="purchase.menu_purchase_config" sequence="11" name="Spreadsheet Panel"/>
+                  parent="purchase.menu_purchase_config" sequence="12" name="Spreadsheet Panel"/>
     </data>
 </odoo>
