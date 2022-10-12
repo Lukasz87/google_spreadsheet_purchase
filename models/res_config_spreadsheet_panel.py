@@ -6,3 +6,4 @@ class ResConfigSettingsSpreadsheetPanel(models.Model):
 
     spreadsheet_credentials = fields.Text('Spreadsheet Credentials json')
     scopes = fields.Text('Spreadsheet Scopes')
+    service_account = fields.Char('Spreadsheet Scopes')

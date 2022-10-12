@@ -20,6 +20,7 @@
                 <tree string="Spreadsheet Panel Settings">
                     <field name="spreadsheet_credentials"/>
                     <field name="scopes"/>
+                    <field name="service_account"/>
                 </tree>
             </field>
         </record>
@@ -31,6 +32,7 @@
                 <form string="Spreadsheet Panel Settings">
                     <field name="spreadsheet_credentials"/>
                     <field name="scopes"/>
+                    <field name="service_account"/>
                 </form>
             </field>
         </record>

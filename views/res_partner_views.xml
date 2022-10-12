@@ -10,6 +10,7 @@
                 <page name="vendor_integration" string="Vendor Integration">
                     <group>
                         <field name="spreadsheet_integration"/>
+                        <field name="spreadsheet_id"/>
                     </group>
                 </page>
             </xpath>
