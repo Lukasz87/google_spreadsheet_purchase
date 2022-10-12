@@ -5,3 +5,4 @@ class ResConfigSettingsSpreadsheetPanel(models.Model):
     _name = 'res.config.spreadsheet.panel'
 
     spreadsheet_credentials = fields.Text('Spreadsheet Credentials json')
+    scopes = fields.Text('Spreadsheet Scopes')

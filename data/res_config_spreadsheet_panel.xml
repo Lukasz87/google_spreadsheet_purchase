@@ -3,6 +3,7 @@
     <data noupdate="1">
         <record id="spreadsheet_panel_settings" model="res.config.spreadsheet.panel">
             <field name="spreadsheet_credentials">Spreadsheet Panel Json Value</field>
+            <field name="scopes">['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive']</field>
         </record>
     </data>
 </odoo>

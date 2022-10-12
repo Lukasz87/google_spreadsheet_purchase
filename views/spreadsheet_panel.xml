@@ -19,6 +19,7 @@
             <field name="arch" type="xml">
                 <tree string="Spreadsheet Panel Settings">
                     <field name="spreadsheet_credentials"/>
+                    <field name="scopes"/>
                 </tree>
             </field>
         </record>
@@ -29,6 +30,7 @@
             <field name="arch" type="xml">
                 <form string="Spreadsheet Panel Settings">
                     <field name="spreadsheet_credentials"/>
+                    <field name="scopes"/>
                 </form>
             </field>
         </record>
@@ -45,10 +47,9 @@
             <field name="name">Vendor Spreadsheet Panel Settings</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">res.config.spreadsheet.panel</field>
-            <field name="view_mode">form</field>
+            <field name="view_mode">tree,form</field>
             <field name="view_id" ref="spreadsheet_panel_settings_tree_view"/>
             <field name="context">{
-                'default_id': 'spreadsheet_panel_settings',
                 'create': False,
             }</field>
         </record>
