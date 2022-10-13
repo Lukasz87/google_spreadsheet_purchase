@@ -9,8 +9,7 @@
             <xpath expr="//page[@name='internal_notes']" position="after">
                 <page name="vendor_integration" string="Vendor Integration">
                     <group>
-                        <field name="spreadsheet_integration"/>
-                        <field name="spreadsheet_id"/>
+                        <field name="spreadsheet_integration_panel"/>
                     </group>
                 </page>
             </xpath>
