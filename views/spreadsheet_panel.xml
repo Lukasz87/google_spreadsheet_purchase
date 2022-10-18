@@ -37,6 +37,7 @@
                     <field name="spreadsheet_credentials"/>
                     <field name="scopes"/>
                     <field name="service_account"/>
+                    <field name="columns"/>
                 </tree>
             </field>
         </record>
@@ -49,6 +50,7 @@
                     <field name="spreadsheet_credentials"/>
                     <field name="scopes"/>
                     <field name="service_account"/>
+                    <field name="columns"/>
                 </form>
             </field>
         </record>
@@ -70,6 +72,18 @@
             <field name="context">{
                 'create': False,
             }</field>
+        </record>
+
+        <record id="spreadsheet_panel_settings_columns_tree_view" model="ir.ui.view">
+            <field name="name">spreadsheet.panel.columns.tree.view</field>
+            <field name="model">res.config.spreadsheet.panel.columns</field>
+            <field name="arch" type="xml">
+                <tree string="Spreadsheet Panel Settings">
+                    <field name="column_name"/>
+                    <field name="required"/>
+                    <field name="spreadsheet_panel"/>
+                </tree>
+            </field>
         </record>
 
         <menuitem action="spreadsheet_panel_settings_action" id="menu_spreadsheet_panel_settings_action"

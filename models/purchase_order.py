@@ -1,6 +1,7 @@
 from .spreadsheet_connector import GoogleSpreadsheet
 import pandas as pd
-
+from gspread.cell import Cell
+import string
 from odoo import api, fields, models, _
 from odoo.exceptions import UserError
 
@@ -18,4 +19,10 @@ class PurchaseOrder(models.Model):
                 raise UserError(_('More then one vendor configuration!'))
             spreadsheet = connect.get_spreadsheet(vendor.spreadsheet_id)
             df = pd.DataFrame(spreadsheet.sheet1.get_all_records()) # TODO - add choose sheet
-            print(df)
+            if df.empty:
+                alphabet = list(string.ascii_uppercase)
+                # [(number, x.column_name) for number, x in enumerate(credentials.columns)]
+                columns = [Cell(row=1, col=alphabet[number], value=x.column_name)
+                           for number, x in enumerate(credentials.columns)]
+                spreadsheet.sheet1.update_cells(columns)    # TODO - fix
+                print(spreadsheet)
